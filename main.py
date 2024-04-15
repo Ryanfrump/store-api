@@ -14,7 +14,6 @@ items: list[StoreItem] = []
 
 for item in data:
     items.append(StoreItem(**item))
-    #items.append(StoreItem(id=item["id"], name=item["name"], description=item["description"], float=item["price"]))
 
 
 @app.get("/items")
